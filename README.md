@@ -18,3 +18,5 @@ The detail to fix here is in the extension method:
 For the URL generation to work correctly in every page, this check should be accomplished when modifying `PathBase` property:
 
     urlHelper.ActionContext.HttpContext.Request.PathBase = oldPathBase.Value == $"/{module}" ? new PathString() : new PathString($"/{module}");
+
+If you want to contribute, please go ahead.
